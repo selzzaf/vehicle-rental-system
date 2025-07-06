@@ -1,0 +1,163 @@
+# Laravel Vehicle Rental System - .gitignore
+# This file specifies which files and directories should be ignored by Git
+
+# ============================================================================
+# LARAVEL FRAMEWORK FILES
+# ============================================================================
+
+# Environment configuration (contains sensitive data)
+.env
+.env.backup
+.env.production
+
+# Application key and other sensitive configuration
+.env.example
+
+# ============================================================================
+# DEPENDENCIES
+# ============================================================================
+
+# Composer dependencies
+/vendor/
+composer.phar
+# composer.lock (optionnel - certains projets le gardent pour la reproductibilité)
+
+# NPM dependencies
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ============================================================================
+# APPLICATION STORAGE
+# ============================================================================
+
+# Laravel storage directories
+/storage/*.key
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+/storage/app/public/
+
+# ============================================================================
+# CACHE AND TEMPORARY FILES
+# ============================================================================
+
+# Laravel cache
+/bootstrap/cache/
+.phpunit.result.cache
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================================
+# OPERATING SYSTEM FILES
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================================
+# DEVELOPMENT AND TESTING
+# ============================================================================
+
+# Testing
+/coverage/
+.phpunit.cache/
+
+# Local development
+Homestead.json
+Homestead.yaml
+
+# ============================================================================
+# SECURITY AND SENSITIVE FILES
+# ============================================================================
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+
+# Database dumps
+*.sql
+*.sqlite
+
+# Backup files
+*.bak
+*.backup
+
+# ============================================================================
+# UPLOADED FILES (Optional - uncomment if you want to ignore uploaded images)
+# ============================================================================
+
+# Vehicle images (uncomment if you don't want to track uploaded images)
+# /public/pictures/
+# /public/uploads/
+
+# ============================================================================
+# LOG FILES
+# ============================================================================
+
+# Application logs
+*.log
+logs/
+
+# ============================================================================
+# BUILD AND COMPILATION
+# ============================================================================
+
+# Compiled assets
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+
+# Documentation build files
+/docs/build/
+
+# ============================================================================
+# NOTES
+# ============================================================================
+
+# Remember to:
+# 1. Keep .env.example in version control (template for environment setup)
+# 2. Ensure sensitive data is never committed
+# 3. Update this file if adding new file types or directories
+# 4. Consider whether uploaded files should be tracked or ignored

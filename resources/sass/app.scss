@@ -1,0 +1,191 @@
+// Variables de couleurs
+$rose-fonce: #880E4F;     // Rose foncé
+$rose-clair: #F8BBD0;     // Rose clair
+$blanc: #FFFFFF;          // Blanc
+
+// Variables de typographie
+$font-family-primary: 'Courier New', monospace; // Police principale
+$font-size-base: 1rem;   // Taille de police par défaut
+$line-height-base: 1.6;  // Hauteur de ligne par défaut
+
+// Body (fond principal de la page)
+$body-bg: $blanc;  // Fond blanc pour la page
+
+// Corps du document
+body {
+  background-color: $body-bg;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $rose-fonce;
+  margin: 0;
+  padding: 0;
+}
+
+// En-tête principal (titre)
+h1, h2, h3, h4, h5, h6 {
+  color: $rose-fonce;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+// Cartes (Cards)
+.card {
+  background-color: $rose-clair;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-header {
+    background-color: $rose-fonce;
+    color: $blanc;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .card-body {
+    padding: 20px;
+    color: $rose-fonce;
+    font-size: 1.1rem;
+  }
+
+  .card-footer {
+    background-color: $rose-fonce;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: $blanc;
+  }
+}
+
+// Boutons principaux
+.btn {
+  background-color: $rose-fonce;
+  color: $blanc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: $font-family-primary;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($rose-fonce, 10%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Bouton secondaire
+.btn-secondary {
+  background-color: $rose-clair;
+  color: $rose-fonce;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($rose-clair, 10%);
+  }
+}
+
+// Liens (links)
+a {
+  color: $rose-fonce;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: darken($rose-fonce, 15%);
+  }
+}
+
+// Alertes
+.alert {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+  &.alert-info {
+    background-color: lighten($rose-clair, 20%);
+    color: $rose-fonce;
+  }
+  
+  &.alert-warning {
+    background-color: lighten($rose-fonce, 20%);
+    color: $blanc;
+  }
+
+  &.alert-danger {
+    background-color: lighten($rose-fonce, 10%);
+    color: $blanc;
+  }
+}
+
+// Modals (modaux)
+.modal-content {
+  background-color: $blanc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  .modal-header {
+    background-color: $rose-fonce;
+    color: $blanc;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .modal-body {
+    padding: 20px;
+    color: $rose-fonce;
+  }
+
+  .modal-footer {
+    background-color: $rose-clair;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+// Formulaires
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    color: $rose-fonce;
+    font-weight: bold;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $rose-fonce;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: $rose-fonce;
+    background-color: $blanc;
+
+    &:focus {
+      outline: none;
+      border-color: darken($rose-fonce, 10%);
+    }
+  }
+}
