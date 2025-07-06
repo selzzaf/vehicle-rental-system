@@ -45,7 +45,7 @@ Before running this application, make sure you have the following installed:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/vehicle-rental-system.git
+git clone https://github.com/selzzaf/vehicle-rental-system.git
 cd vehicle-rental-system
 ```
 
@@ -198,9 +198,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+**Selzzaf**
+- GitHub: [@selzzaf](https://github.com/selzzaf)
 
 ## 🙏 Acknowledgments
 
@@ -211,9 +210,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you encounter any issues or have questions:
-1. Check the [Issues](https://github.com/yourusername/vehicle-rental-system/issues) page
+1. Check the [Issues](https://github.com/selzzaf/vehicle-rental-system/issues) page
 2. Create a new issue with detailed information
-3. Contact the maintainer directly
+3. Review our [Security Guide](SECURITY.md) for deployment best practices
 
 ---
 
